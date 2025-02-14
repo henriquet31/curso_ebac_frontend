@@ -1,0 +1,60 @@
+@corDeFundo: #192a56;
+@corDeTexto: #f5f6fa;
+@corDoCard: #273c75;
+@corDoBotao: #00a8ff;
+@fontePrincipal: 'Roboto', sans-serif;
+
+body {
+    background-color: @corDeFundo;
+    color: @corDeTexto;
+    font-family: @fontePrincipal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+
+    h1 {
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+}
+
+.container {
+    background-color: @corDoCard;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+}
+
+.converter {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, select, button {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #6089aa;
+    border-radius: 8px;
+}
+
+button {
+    background-color: @corDoBotao;
+    color: @corDeTexto;
+    cursor: pointer;
+    border: none;
+
+    &:hover {
+        background-color: darken(@corDoBotao, 10%);
+    }
+}
+
+#resultado {
+    font-size: 18px;
+    margin-top: 20px;
+    color: @corDeTexto;
+}
